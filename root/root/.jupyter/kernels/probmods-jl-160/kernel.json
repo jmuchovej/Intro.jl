@@ -1,0 +1,8 @@
+{
+    "env": {},
+    "display_name": "Probmods.jl (Julia 1.6.0)",
+    "argv": [ "/root/.jupyter/kernels/probmods-jl-160/start.sh", "{connection_file}" ],
+    "language": "julia",
+    "interrupt_mode": "signal"
+  }
+  

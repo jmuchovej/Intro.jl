@@ -1,0 +1,8 @@
+#!/usr/bin/with-contenv bash
+
+export SHELL=$(cat /etc/passwd | grep $(whoami) | cut -d ":" -f 7)
+export JULIA_NUM_THREADS="$(nproc)"
+
+cd /workspace
+
+exec julia -p $(($(nproc) - 1)) --project=@. -e "using IJulia; jupyterlab(; dir=pwd())"
