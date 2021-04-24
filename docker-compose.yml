@@ -2,16 +2,11 @@ version: "3.8"
 
 services:
   intro.jl:
-    build: .
-    image: "jmuchovej/intro.jl:latest"
+    image: "jmuchovej/julia:1.6.0"
     ports:
-    - 46876:46876
+      - 46876:8888
     volumes:
-    - ./src:/workspace
-    - ./root/root/.julia/environments/v1.6/Manifest.toml:/root/.julia/environments/v1.6/Manifest.toml
-    - ./root/root/.julia/environments/v1.6/Project.toml:/root/.julia/environments/v1.6/Project.toml
-    - ./root/root/.jupyter:/root/.jupyter
-    environment:
-      PUID: 501
-      PGID: 20
-      TZ: America/New_York
+      - ./notebooks:/workspace
+      - ./Project.toml:/root/.julia/environments/base/Project.toml
+    env_file:
+      - "docker.env"

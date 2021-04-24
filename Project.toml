@@ -1,4 +1,4 @@
-name = "Probmods.jl"
+name = "Intro.jl"
 authors = ["John M <muchovej@pm.me>"]
 
 [deps]
