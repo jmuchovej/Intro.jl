@@ -10,8 +10,8 @@ An introduction to Julia, Gen.jl, and a few other machine-learning libraries.
   1.6, then use the `Project.toml` file here.)
 - Run the `setup.sh` script by opening a Terminal and running `./setup.sh`.
 - Then you should use that same Terminal to run `docker-compose up`.
-- Wait a few seconds for JupyterLab to start, then head over to port: `46786`
-  (or [this link](http://localhost:46786/lab)).
+- Wait a few seconds for JupyterLab to start, then head over to port: `46876`
+  (or [this link](http://localhost:46876/lab)).
 
 ### Installing Docker &amp; Docker Compose
 
