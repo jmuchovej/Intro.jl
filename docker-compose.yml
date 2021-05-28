@@ -7,6 +7,5 @@ services:
       - 46876:8888
     volumes:
       - ./notebooks:/workspace
-      - ./Project.toml:/root/.julia/environments/base/Project.toml
     env_file:
       - "docker.env"
